@@ -4,17 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .sidebar{
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            padding: 20px 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar a.burger{
+            /* color: #fff; */
+            font-size: 24px;
+            float: right;
+        }
+        .show {
+            left: 0;
+        }
+
+        .hide {
+            left: -2570px;
+        }
+    </style>
 </head>
 <body>
     <main class="main">
-        <section>
+        <!-- <section>
             <div class="container">
                 <label for="radius">Radius:</label>
                 <input type="range" id="radius" min="0" max="50">
 
                 <div class="box"></div>
             </div>
-        </section>
+        </section> -->
+
+        <div class="sidebar show">
+            <a href="#" class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
     </main>  
   
     <script src="./as.js"></script>
